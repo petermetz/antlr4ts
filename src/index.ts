@@ -5,7 +5,6 @@
 
 export * from './ANTLRErrorListener';
 export * from './ANTLRErrorStrategy';
-// export * from './ANTLRFileStream';
 export * from './ANTLRInputStream';
 export * from './BailErrorStrategy';
 export * from './BufferedTokenStream';
@@ -43,8 +42,14 @@ export * from './TokenFactory';
 export * from './TokenSource';
 export * from './TokenStream';
 export * from './TokenStreamRewriter';
-// export * from './UnbufferedCharStream';
-// export * from './UnbufferedTokenStream';
 export * from './Vocabulary';
 export * from './VocabularyImpl';
 export * from './WritableToken';
+
+export * from './misc/Utils';
+export { NotNull, Override } from './Decorators';
+export * from './index';
+export * from './atn/index';
+export * from './dfa/index';
+export * from './misc/index';
+export * from './tree/index';
