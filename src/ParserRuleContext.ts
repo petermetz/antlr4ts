@@ -177,9 +177,9 @@ export class ParserRuleContext extends RuleContext {
 	@Override
 	/** Override to make type more specific */
 	get parent(): ParserRuleContext | undefined {
-		let parent = super.parent;
+		let parent = super.getParent();
 		if (parent === undefined || parent instanceof ParserRuleContext) {
-			return parent;
+			return parent as any;
 		}
 
 		throw new TypeError("Invalid parent type for ParserRuleContext");

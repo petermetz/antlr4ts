@@ -110,6 +110,8 @@ export class RuleContext extends RuleNode {
 	@Override
 	get ruleContext(): RuleContext { return this; }
 
+	public getParent(): RuleContext | undefined { return this._parent; }
+
 	@Override
 	get parent(): RuleContext | undefined { return this._parent; }
 

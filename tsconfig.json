@@ -2,13 +2,14 @@
   "compilerOptions": {
     "outDir": "target",
     "sourceMap": true,
-    "module": "commonjs",
-    "target": "es2015",
+    "module": "umd",
+    "target": "es5",
     "lib": [
+      "dom",
       "es6"
     ],
     "noImplicitAny": true,
-    "strictNullChecks": true,
+    "strictNullChecks": false,
     "experimentalDecorators": true,
     "declaration": true,
     "downlevelIteration": true,
@@ -18,6 +19,7 @@
     ],
     "types": [
       "node",
+      "mocha-typescript",
       "mocha"
     ]
   },
